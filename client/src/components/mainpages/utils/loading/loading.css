@@ -1,0 +1,10 @@
+.load_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+.load_page img {
+  height: 320px;
+  object-fit: cover;
+}
