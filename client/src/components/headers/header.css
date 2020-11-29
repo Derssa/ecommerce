@@ -29,13 +29,11 @@ header ul li:hover {
 }
 .cart_icon {
   position: relative;
-  margin-right: 20px;
-  margin-left: 20px;
   margin-top: 8px;
 }
 .cart_icon span {
   background: crimson;
-  border-radius: 20px;
+  border-radius: 5px;
   color: white;
   position: absolute;
   top: -8px;

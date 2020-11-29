@@ -55,8 +55,8 @@ const Header = () => {
   return (
     <header>
       <div className="menu" onClick={() => setMenu(true)}>
-        <IconButton>
-          <MenuRoundedIcon style={{ fontSize: 30 }} />
+        <IconButton style={{ padding: 0 }}>
+          <MenuRoundedIcon style={{ fontSize: 30, padding: 0 }} />
         </IconButton>
       </div>
       <div className="logo">
@@ -78,7 +78,7 @@ const Header = () => {
         )}
 
         <li className="menu" onClick={() => setMenu(false)}>
-          <IconButton>
+          <IconButton style={{ padding: 0 }}>
             <CloseRoundedIcon style={{ fontSize: 30 }} />
           </IconButton>
         </li>

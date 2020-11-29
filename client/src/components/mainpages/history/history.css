@@ -36,7 +36,7 @@ table a {
 .history_page button {
   background-color: rgb(78, 160, 78);
   color: white;
-  padding: 10px 20px;
+  padding: 0 20px;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;

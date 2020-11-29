@@ -9,6 +9,7 @@ const DetailProduct = () => {
   const state = useContext(GlobalState);
   const [products] = state.ProductAPI.products;
   const [detailProduct, setDetailProduct] = useState([]);
+  const [isRP, setIsRP] = useState(false);
 
   useEffect(() => {
     if (params.id) {
@@ -41,14 +42,17 @@ const DetailProduct = () => {
         </div>
       </div>
       <div>
-        <h2>Related products</h2>
+        {isRP ? <h2>Related products</h2> : null}
         <div className="products">
           {products.map((product) => {
-            return product.category === detailProduct.category ? (
-              product._id === detailProduct._id ? null : (
-                <ProductItem key={product._id} product={product} />
-              )
-            ) : null;
+            if (product.category === detailProduct.category) {
+              if (!(product._id === detailProduct._id)) {
+                if (!isRP) {
+                  setIsRP(true);
+                }
+                return <ProductItem key={product._id} product={product} />;
+              }
+            }
           })}
         </div>
       </div>

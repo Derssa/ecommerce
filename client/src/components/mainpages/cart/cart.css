@@ -1,5 +1,6 @@
 .allCart {
   margin: 30px auto;
+  padding: 0 5%;
 }
 .cart {
   position: relative;
@@ -32,4 +33,17 @@
 }
 .total h3 {
   color: crimson;
+}
+.total a {
+  background-color: rgb(51, 156, 125);
+  border-radius: 10px;
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid white;
+  transition: 0.3s;
+}
+.total a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 156, 125);
+  border: 1px solid rgb(51, 156, 125);
 }
