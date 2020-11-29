@@ -203,8 +203,8 @@ const userCtrl = {
       client_reference_id: String(user._id),
       mode: "payment",
       customer_email: user.email,
-      success_url: "http://localhost:3000/history",
-      cancel_url: "http://localhost:3000/cart",
+      success_url: "https://ecommerce-dersa.herokuapp.com/history",
+      cancel_url: "https://ecommerce-dersa.herokuapp.com/cart",
     });
 
     res.json({ id: session.id });
